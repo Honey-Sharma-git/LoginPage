@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 /*CSS RESET*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* outline: 1px solid red; */
+  outline: 1px solid red;
 }
 
 body {
@@ -25,17 +25,19 @@ body {
   display: flex;
   flex-flow: column;
   align-items: center;
+  margin-bottom: 1rem;
 }
 .sign-in-heading-container h1 {
   text-align: center;
   font-weight: 100;
-  font-size: 8vw;
+  font-size: clamp(2rem, 3vw + 1rem, 3rem);
 }
 
 main {
   display: flex;
-  justify-content: space-around;
-  flex-flow: row wrap;
+  align-items: center;
+  flex-flow: column wrap;
+  gap: 20px;
 }
 .sign-in-with-google-button {
   color: black;
@@ -46,9 +48,16 @@ main {
   border-color: white;
   border-radius: 8px;
   width: 60vw;
+  max-width: 300px;
 }
 .button-align {
   display: flex;
   justify-content: center;
   gap: 20px;
+}
+.separator {
+  word-spacing: 4px;
+  letter-spacing: 2px;
+  width: 80vw;
+  text-align: center;
 }
