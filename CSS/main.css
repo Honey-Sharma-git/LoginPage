@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 body {
@@ -37,7 +37,7 @@ main {
   display: flex;
   align-items: center;
   flex-flow: column wrap;
-  gap: 20px;
+  gap: 10px;
 }
 .sign-in-with-google-button {
   color: black;
@@ -49,6 +49,10 @@ main {
   border-radius: 8px;
   width: 60vw;
   max-width: 300px;
+  cursor: pointer;
+}
+.sign-in-with-google-button:hover {
+  box-shadow: 1px 1px 25px grey;
 }
 .button-align {
   display: flex;
@@ -60,4 +64,37 @@ main {
   letter-spacing: 2px;
   width: 80vw;
   text-align: center;
+  color: grey;
+}
+.idPassword-container form,
+.username-container,
+.password-container {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+}
+.idPassword-container form {
+  gap: 10px;
+}
+.username-container,
+.password-container {
+  gap: 8px;
+}
+#password,
+#username-email {
+  height: 50px;
+  /* max-height: 40px; */
+  width: 80vw;
+  max-width: 400px;
+  border-style: solid;
+  border-radius: 10px;
+  padding-left: 1rem;
+  font-size: 1.1rem;
+  font-family: "Open Sans";
+}
+.rememberMe-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  gap: 10px;
 }

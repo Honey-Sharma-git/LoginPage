@@ -31,7 +31,32 @@
             />Sign in with Google
           </div>
         </button>
-        <div class="separator">-or sign in with email-</div>
+        <div class="separator">&mdash;or sign in with email&mdash;</div>
+        <div class="idPassword-container">
+          <form action="https://httpbin.org/get" method="get">
+            <div class="username-container">
+              <label class="username-email" for="username-email"
+                >Username or Email:</label
+              >
+              <input
+                type="text"
+                name="username/email"
+                id="username-email"
+                autofocus
+                required
+                placeholder="Type here"
+              />
+            </div>
+            <div class="password-container">
+              <label class="password" for="password">Password:</label>
+              <input type="password" name="Password" id="password" required />
+              <div class="rememberMe-container">
+                <input type="checkbox" name="rememberMe" id="rememberMe" />
+                <label for="rememberMe" class="rememberMe"> Remember me </label>
+              </div>
+            </div>
+          </form>
+        </div>
       </main>
     </div>
   </body>
