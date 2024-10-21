@@ -257,3 +257,20 @@ body {
   box-shadow: 1px 1px 25px grey;
 }
 /* ////////////////////////////////SignUp page/////////////////////////////// */
+.signUp-body-container {
+  font-family: "Open Sans";
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.logo-figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.logo-figure img {
+  height: 40%;
+  width: 40%;
+}
+
