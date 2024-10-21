@@ -105,7 +105,6 @@ body {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-
   gap: 10px;
 }
 .rememberMe {
@@ -130,8 +129,9 @@ body {
   box-shadow: 1px 1px 25px grey;
   text-decoration: underline;
 }
-.rememberMe-forgotPass a:hover {
-  text-decoration: underline;
+.rememberMe-forgotPass a:hover,
+.rememberMe-forgotPass a:focus {
+  text-decoration: underline solid #ffc309;
 }
 .rememberMe-forgotPass a:active {
   box-shadow: none;
@@ -178,7 +178,13 @@ body {
   font-family: "Open Sans";
   font-size: 1.2rem;
   letter-spacing: 1px;
+  text-decoration: none;
 }
+.noAccount-container a:hover,
+.noAccount-container a:focus {
+  text-decoration: underline solid #ffc309;
+}
+/* ///////////////////////Forgot password page////////////////////////// */
 .forgotPassword-outer-container {
   padding: 10vh 10vw;
   display: flex;
