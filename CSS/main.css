@@ -289,6 +289,10 @@ body {
   min-height: 100vh;
   padding: 2vw 6vw;
 }
+.signUp-main-container h1 {
+  width: 100%;
+  text-align: center;
+}
 @media screen and (max-width: 425px) {
   .signUp-header-container {
     min-height: 17vh;
@@ -297,7 +301,7 @@ body {
     height: 30%;
     width: 30%;
   }
-  .signUp-main-container h1{
+  .signUp-main-container h1 {
     font-size: 1.5rem;
   }
 }
