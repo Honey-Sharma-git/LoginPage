@@ -200,6 +200,9 @@ body {
   align-items: flex-start;
   gap: 30px;
 }
+.forgotPassword-email-label {
+  font-size: 1.5rem;
+}
 #email {
   max-height: 50px;
   height: 8vh;
