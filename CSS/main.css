@@ -54,6 +54,9 @@ main {
 .sign-in-with-google-button:hover {
   box-shadow: 1px 1px 25px grey;
 }
+.sign-in-with-google-button:focus {
+  box-shadow: 1px 1px 25px grey;
+}
 .button-align {
   display: flex;
   justify-content: center;
@@ -92,6 +95,10 @@ main {
   font-size: 1.1rem;
   font-family: "Open Sans";
 }
+#password:focus,
+#username-email:focus {
+  box-shadow: 1px 1px 25px grey;
+}
 .rememberMe-container {
   display: flex;
   flex-flow: row wrap;
@@ -116,3 +123,6 @@ main {
   color: hsl(0, 0%, 80%);
 }
 
+.rememberMe-forgotPass a:focus {
+  box-shadow: 1px 1px 25px grey;
+}
