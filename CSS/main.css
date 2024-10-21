@@ -11,7 +11,6 @@ body {
   font-family: "Open Sans";
   background-color: black;
   color: white;
-  /* padding: 1%; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,7 +38,7 @@ main {
   display: flex;
   align-items: center;
   flex-flow: column wrap;
-  gap: 10px;
+  gap: 40px;
 }
 .sign-in-with-google-button {
   color: black;
@@ -68,6 +67,7 @@ main {
   word-spacing: 4px;
   letter-spacing: 2px;
   width: 80vw;
+  max-width: 400px;
   text-align: center;
   color: grey;
 }
@@ -88,7 +88,6 @@ main {
 #password,
 #username-email {
   height: 50px;
-  /* max-height: 40px; */
   width: 80vw;
   max-width: 400px;
   border-style: solid;
@@ -131,7 +130,6 @@ main {
   text-decoration: underline;
 }
 .rememberMe-forgotPass a:hover {
-  /* box-shadow: 1px 1px 25px grey; */
   text-decoration: underline;
 }
 .rememberMe-forgotPass a:active {
@@ -161,4 +159,22 @@ main {
   display: flex;
   justify-content: center;
   gap: 20px;
+}
+.noAccount-container {
+  width: 80vw;
+  max-width: 400px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+}
+.noAccount-container p {
+  color: hsl(0, 0%, 80%);
+}
+.noAccount-container a {
+  color: white;
+  font-family: "Open Sans";
+  font-size: 1.2rem;
+  letter-spacing: 1px;
 }
