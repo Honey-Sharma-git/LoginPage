@@ -6,7 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 body {
@@ -262,18 +262,19 @@ body {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
+  align-items: center;
 }
 .signUp-header-container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-grow: 1;
+  min-height: 100vh;
 }
 .logo-figure {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
 }
 .logo-figure img {
   height: 40%;
@@ -287,4 +288,13 @@ body {
   justify-content: flex-start;
   min-height: 100vh;
   padding: 6vw;
+}
+@media screen and (max-width: 425px) {
+  .signUp-header-container {
+    min-height: 17vh;
+  }
+  .logo-figure img {
+    height: 30%;
+    width: 30%;
+  }
 }
