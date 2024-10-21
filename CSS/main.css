@@ -305,7 +305,6 @@ body {
   .signUp-main-container h1 {
     font-size: 1.5rem;
   }
-  
 }
 .signUp-with-button {
   color: black;
@@ -324,7 +323,6 @@ body {
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  /* column-gap: 10px; */
 }
 .button-text {
   width: 100%;
@@ -337,6 +335,7 @@ body {
   box-shadow: 1px 1px 25px grey;
 }
 .signUp-bottom-container {
+  color: grey;
   width: 100%;
   display: flex;
   flex-flow: column nowrap;
@@ -346,7 +345,12 @@ body {
   text-align: center;
 }
 .signUp-agreement-container {
-
   width: 90vw;
   max-width: 400px;
+}
+.signUp-agreement-container a,
+.signUp-agreement-container a:visited,
+.signUp-bottom-container a:visited,
+.signUp-bottom-container a {
+  color: grey;
 }
