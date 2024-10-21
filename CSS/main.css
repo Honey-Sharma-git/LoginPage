@@ -305,6 +305,7 @@ body {
   .signUp-main-container h1 {
     font-size: 1.5rem;
   }
+  
 }
 .signUp-with-button {
   color: black;
@@ -334,4 +335,18 @@ body {
 }
 .signUp-with-button:focus {
   box-shadow: 1px 1px 25px grey;
+}
+.signUp-bottom-container {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  text-align: center;
+}
+.signUp-agreement-container {
+
+  width: 90vw;
+  max-width: 400px;
 }
