@@ -263,6 +263,12 @@ body {
   flex-flow: row wrap;
   justify-content: space-between;
 }
+.signUp-header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
 .logo-figure {
   display: flex;
   justify-content: center;
@@ -273,4 +279,12 @@ body {
   height: 40%;
   width: 40%;
 }
-
+.signUp-main-container {
+  flex-grow: 1;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding: 6vw;
+}
