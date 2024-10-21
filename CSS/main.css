@@ -6,7 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 body {
@@ -304,4 +304,18 @@ body {
   .signUp-main-container h1 {
     font-size: 1.5rem;
   }
+}
+.signUp-with-button {
+  width: 100%;
+}
+.signUp-button-align {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  /* column-gap: 10px; */
+}
+.button-text {
+  width:40%;
+  text-align: center;
 }
