@@ -286,6 +286,7 @@ body {
   flex-flow: column wrap;
   align-items: center;
   justify-content: flex-start;
+  row-gap: 22px;
   min-height: 100vh;
   padding: 2vw 6vw;
 }
@@ -306,16 +307,31 @@ body {
   }
 }
 .signUp-with-button {
-  width: 100%;
+  color: black;
+  background-color: white;
+  font-size: 1rem;
+  padding: 1rem;
+  border-style: solid;
+  border-color: white;
+  border-radius: 8px;
+  width: 60vw;
+  max-width: 300px;
+  cursor: pointer;
 }
 .signUp-button-align {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
   /* column-gap: 10px; */
 }
 .button-text {
-  width:40%;
+  width: 100%;
   text-align: center;
+}
+.signUp-with-button:hover {
+  box-shadow: 1px 1px 25px grey;
+}
+.signUp-with-button:focus {
+  box-shadow: 1px 1px 25px grey;
 }
