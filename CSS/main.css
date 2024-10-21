@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+/*Notes*/
+/* brand color: #ffc309; */
 /*CSS RESET*/
 * {
   margin: 0;
@@ -30,8 +32,7 @@ body {
   text-align: center;
   font-weight: 100;
   font-size: clamp(2rem, 3vw + 1rem, 3rem);
-  color: pink;
-  text-shadow: -2px 2px 2px grey;
+  color: white;
 }
 
 main {
@@ -141,9 +142,9 @@ main {
   font-weight: 600;
   letter-spacing: 2px;
   padding: 1rem;
-  background-color: pink;
+  background-color: #ffc309;
   border-style: solid;
-  border-color: #ffc0cb;
+  border-color: #ffc309;
   border-radius: 8px;
   width: 40vw;
   max-width: 200px;
