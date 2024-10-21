@@ -186,6 +186,19 @@ body {
   align-items: flex-start;
   gap: 40px;
 }
+.forgotPassword-outer-container a img {
+  box-sizing: content-box;
+  display: block;
+  height: 25px;
+  width: 25px;
+  padding: 5px;
+  align-self: center;
+}
+@media screen and (min-width: 425px) {
+  .forgotPassword-outer-container a img {
+    display: none;
+  }
+}
 .forgotPassword-h1 {
   width: 100%;
 }
