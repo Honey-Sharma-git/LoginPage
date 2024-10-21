@@ -6,7 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 body {
@@ -178,4 +178,31 @@ body {
   font-family: "Open Sans";
   font-size: 1.2rem;
   letter-spacing: 1px;
+}
+.forgotPassword-outer-container {
+  padding: 10vh 10vw;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+  gap: 40px;
+}
+.forgotPassword-h1 {
+  width: 100%;
+}
+.forgotPassword-p {
+  width: 100%;
+  max-width: 500px;
+}
+.forgotPassword-outer-container form {
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+  gap: 30px;
+}
+#email,
+.forgotPassword-button {
+  max-height: 50px;
+  height: 8vh;
+  width: 100%;
 }
