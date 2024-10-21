@@ -31,6 +31,8 @@ body {
   text-align: center;
   font-weight: 100;
   font-size: clamp(2rem, 3vw + 1rem, 3rem);
+  color: pink;
+  text-shadow: -2px 2px 2px grey;
 }
 
 main {
@@ -118,6 +120,7 @@ main {
 }
 .rememberMe-forgotPass a {
   color: hsl(0, 0%, 80%);
+  text-decoration: none;
 }
 .rememberMe-forgotPass a:visited {
   color: hsl(0, 0%, 80%);
@@ -125,4 +128,37 @@ main {
 
 .rememberMe-forgotPass a:focus {
   box-shadow: 1px 1px 25px grey;
+  text-decoration: underline;
+}
+.rememberMe-forgotPass a:hover {
+  /* box-shadow: 1px 1px 25px grey; */
+  text-decoration: underline;
+}
+.rememberMe-forgotPass a:active {
+  box-shadow: none;
+}
+.signIn {
+  color: black;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding: 1rem;
+  background-color: pink;
+  border-style: solid;
+  border-color: #ffc0cb;
+  border-radius: 8px;
+  width: 40vw;
+  max-width: 200px;
+  cursor: pointer;
+}
+.signIn:hover {
+  box-shadow: 1px 1px 25px grey;
+}
+.signIn:focus {
+  box-shadow: 1px 1px 25px grey;
+}
+.button-align {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
