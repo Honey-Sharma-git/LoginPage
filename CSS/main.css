@@ -95,6 +95,24 @@ main {
 .rememberMe-container {
   display: flex;
   flex-flow: row wrap;
-  justify-content: flex-start;
+  justify-content: space-between;
+
   gap: 10px;
 }
+.rememberMe {
+  color: hsl(0, 0%, 80%);
+}
+.rememberMe-forgotPass {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 80vw;
+  max-width: 400px;
+}
+.rememberMe-forgotPass a {
+  color: hsl(0, 0%, 80%);
+}
+.rememberMe-forgotPass a:visited {
+  color: hsl(0, 0%, 80%);
+}
+
