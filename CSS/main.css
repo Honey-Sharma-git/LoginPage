@@ -6,7 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* outline: 1px solid red; */
+  outline: 1px solid red;
 }
 
 body {
@@ -256,3 +256,4 @@ body {
 .forgotPassword-button:focus {
   box-shadow: 1px 1px 25px grey;
 }
+/* ////////////////////////////////SignUp page/////////////////////////////// */
