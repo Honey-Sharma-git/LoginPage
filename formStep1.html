@@ -67,7 +67,29 @@
       </nav>
     </header>
     <main class="formStep1-container">
-      <form action="" class="formStep1"></form>
+      <form action="https://httpbin.org/get" method="get" class="formStep1">
+        <label for="formStep1-email-input" class="formStep1-email"
+          >Email address:</label
+        >
+        <input
+          type="email"
+          name="Email address:"
+          id="formStep1-email-input"
+          placeholder="Enter your email address"
+          required
+        />
+        <label for="phone" class="formStep1-phone">Phone number:</label>
+        <input
+          type="tel"
+          name="Phone number"
+          id="phone"
+          required
+          placeholder="+91-9876543210"
+        />
+        <div class="formStep1-button-container">
+          <a href=""><button>Next</button></a>
+        </div>
+      </form>
     </main>
   </body>
 </html>
