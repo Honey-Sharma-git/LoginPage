@@ -509,3 +509,18 @@ body {
 .formStep1-button-container a:visited {
   color: black;
 }
+/* /////////////////////////////////CompleteSignUp page///////////////////////////////////////// */
+.completeSignUp-container {
+  background-color: black;
+  width: auto;
+  height: 100vh;
+
+  background-image: radial-gradient(
+    circle 200px at center,
+    #ffc309 50%,
+    black 50%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
