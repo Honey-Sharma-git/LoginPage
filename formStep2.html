@@ -32,13 +32,13 @@
     />
     <link rel="manifest" href="Image/favicon_io/site.webmanifest" />
     <!-- favicon code above -->
-    <title>DesignStripes: Sign up</title>
+    <title>Sign up: Step-2</title>
     <link rel="stylesheet" href="CSS/main.css" />
   </head>
   <body class="formStep1-body-container">
     <header class="formStep1-header">
       <nav class="formStep1-icon-container">
-        <a href="signUp.html"
+        <a href="formStep1.html"
           ><img
             class="backIcon"
             src="Image/Icons/back-icon.png"
@@ -64,7 +64,7 @@
           <div class="step-circle">1</div>
           <div class="step-name">Create</div>
         </div>
-        <div class="step">
+        <div class="step step-activated">
           <div class="step-circle">2</div>
           <div class="step-name">Secure</div>
         </div>
@@ -77,25 +77,25 @@
     <main class="formStep1-container">
       <form action="https://httpbin.org/get" method="get" class="formStep1">
         <label for="formStep1-email-input" class="formStep1-email"
-          >Email address:</label
+          >Username:</label
         >
         <input
-          type="email"
-          name="Email address:"
+          type="text"
+          name="Username"
           id="formStep1-email-input"
-          placeholder="Enter your email address"
+          placeholder="Create your username"
           required
         />
-        <label for="phone" class="formStep1-phone">Phone number:</label>
+        <label for="phone" class="formStep1-phone">Password</label>
         <input
-          type="tel"
-          name="Phone number"
+          type="password"
+          name="Password"
           id="phone"
           required
-          placeholder="+91-9876543210"
+          placeholder="Create a strong password"
         />
         <div class="formStep1-button-container">
-          <a href="formStep2.html"><div class="button">Next</div></a>
+          <a href="formStep3.html"><div class="button">Next</div></a>
         </div>
       </form>
     </main>
