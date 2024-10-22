@@ -6,7 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 body {
@@ -363,11 +363,10 @@ body {
   flex-direction: column nowrap;
   justify-content: flex-start;
   align-items: center;
-  background-color: lightblue;
   outline: 6px dotted green;
 }
-.formStep1-header{
-  width:100%;
+.formStep1-header {
+  width: 100%;
 }
 .formStep1-icon-container {
   display: flex;
@@ -375,12 +374,11 @@ body {
   justify-content: space-between;
   align-items: center;
 
-  
   outline: 2px dashed black;
-  margin:1rem;
+  margin: 1rem;
 }
 .formStep1-icon-container img {
-  display: block;  
+  display: block;
 }
 .formStep1-icon-container a .brandLogo {
   height: 80px;
@@ -389,4 +387,46 @@ body {
 .formStep1-icon-container a .backIcon {
   height: 25px;
   width: 25px;
+}
+.formStep1-progress-container {
+  width: 100%;
+}
+.formStep1-steps-nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-flow: row wrap;
+}
+.step {
+  outline: 3px solid #ffc309;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+.step-circle {
+  height: 30px;
+  width: 30px;
+  color: black;
+  background-color: white;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 1rem;
+}
+.step .step-name {
+  font-size: 0.8rem;
+}
+.step-activated {
+  background-color: #ffc309;
+  color: black;
+  font-weight: 900;
+  border-color: #ffc309;
+  box-shadow: 0px 4px 12px grey;
 }
