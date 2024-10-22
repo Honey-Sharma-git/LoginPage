@@ -6,7 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* outline: 1px solid red; */
+  outline: 1px solid red;
 }
 
 body {
@@ -353,4 +353,40 @@ body {
 .signUp-bottom-container a:visited,
 .signUp-bottom-container a {
   color: grey;
+}
+/* ///////////////////////////////////////Sign up form page///////////////////////////////////////////// */
+.formStep1-body-container {
+  font-family: "Open Sans";
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: lightblue;
+  outline: 6px dotted green;
+}
+.formStep1-header{
+  width:100%;
+}
+.formStep1-icon-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  
+  outline: 2px dashed black;
+  margin:1rem;
+}
+.formStep1-icon-container img {
+  display: block;  
+}
+.formStep1-icon-container a .brandLogo {
+  height: 80px;
+  width: 100px;
+}
+.formStep1-icon-container a .backIcon {
+  height: 25px;
+  width: 25px;
 }
