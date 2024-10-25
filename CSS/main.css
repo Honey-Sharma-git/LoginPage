@@ -1,13 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 /*Notes*/
 /* brand color: #ffc309; */
-/*CSS RESET*/
+/* || CSS RESET*/
+*,
+*::after,
+*::before {
+  /* outline: 1px solid lime; */
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* outline: 1px solid red; */
+  /* background-color: hsla(0, 100%, 50%, 0.1); */
 }
+
+/* || VARIABLES */
+:root {
+  /* COLORS */
+  --BRANDCOLOR: #ffc309;
+}
+/* || GENERAL STYLES*/
 
 body {
   font-family: "Open Sans";
@@ -116,14 +128,17 @@ body {
 }
 .rememberMe-forgotPass a:any-link {
   color: hsl(0, 0%, 80%);
-  text-decoration: none;
+  /* text-decoration: none; */
 }
 .rememberMe-forgotPass a:focus {
   box-shadow: 1px 1px 25px grey;
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 .rememberMe-forgotPass:is(a:hover, a:focus) {
-  text-decoration: underline solid #ffc309;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-color: var(--BRANDCOLOR);
+  text-decoration-thickness: 2px;
 }
 .rememberMe-forgotPass a:active {
   box-shadow: none;
