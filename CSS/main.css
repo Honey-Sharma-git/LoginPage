@@ -53,10 +53,7 @@ body {
   max-width: 300px;
   cursor: pointer;
 }
-.sign-in-with-google-button:hover {
-  box-shadow: 1px 1px 25px grey;
-}
-.sign-in-with-google-button:focus {
+.sign-in-with-google-button:is(:hover, :focus) {
   box-shadow: 1px 1px 25px grey;
 }
 .button-align {
@@ -117,14 +114,10 @@ body {
   width: 80vw;
   max-width: 400px;
 }
-.rememberMe-forgotPass a {
+.rememberMe-forgotPass a:any-link {
   color: hsl(0, 0%, 80%);
   text-decoration: none;
 }
-.rememberMe-forgotPass a:visited {
-  color: hsl(0, 0%, 80%);
-}
-
 .rememberMe-forgotPass a:focus {
   box-shadow: 1px 1px 25px grey;
   text-decoration: underline;
@@ -149,8 +142,7 @@ body {
   max-width: 200px;
   cursor: pointer;
 }
-.signIn:hover,
-.signIn:focus {
+.signIn:is(:hover, :focus) {
   box-shadow: 1px 1px 25px grey;
 }
 .button-align {
@@ -246,8 +238,8 @@ body {
   font-family: "Open Sans";
   font-size: 1.1rem;
 }
-#email:is(focus, hover),
-.forgotPassword-button:is(hover, focus) {
+#email:is(:focus, :hover),
+.forgotPassword-button:is(:hover, :focus) {
   box-shadow: 1px 1px 25px grey;
 }
 /* ////////////////////////////////SignUp page/////////////////////////////// */
@@ -322,10 +314,7 @@ body {
   width: 100%;
   text-align: center;
 }
-.signUp-with-button:hover {
-  box-shadow: 1px 1px 25px grey;
-}
-.signUp-with-button:focus {
+.signUp-with-button:is(:hover, :focus) {
   box-shadow: 1px 1px 25px grey;
 }
 .signUp-bottom-container {
@@ -486,19 +475,13 @@ body {
   background-color: #ffc309;
 }
 /*Box-shaddow style*/
-.formStep1-button-container a .button:focus,
-.formStep1-button-container a .button:hover,
-#phone:hover,
-#phone:focus,
-#formStep1-email-input:hover,
-#formStep1-email-input:focus {
+.formStep1-button-container a .button:is(:focus, :hover),
+#phone:is(:hover, :focus),
+#formStep1-email-input:is(:hover, :focus) {
   box-shadow: 1px 1px 25px grey;
 }
-.formStep1-button-container a {
+.formStep1-button-container a:any-link {
   text-decoration: none;
-  color: black;
-}
-.formStep1-button-container a:visited {
   color: black;
 }
 /* /////////////////////////////////CompleteSignUp page///////////////////////////////////////// */
