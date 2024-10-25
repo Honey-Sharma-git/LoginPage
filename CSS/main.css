@@ -129,8 +129,7 @@ body {
   box-shadow: 1px 1px 25px grey;
   text-decoration: underline;
 }
-.rememberMe-forgotPass a:hover,
-.rememberMe-forgotPass a:focus {
+.rememberMe-forgotPass:is(a:hover, a:focus) {
   text-decoration: underline solid #ffc309;
 }
 .rememberMe-forgotPass a:active {
@@ -150,9 +149,7 @@ body {
   max-width: 200px;
   cursor: pointer;
 }
-.signIn:hover {
-  box-shadow: 1px 1px 25px grey;
-}
+.signIn:hover,
 .signIn:focus {
   box-shadow: 1px 1px 25px grey;
 }
@@ -180,8 +177,7 @@ body {
   letter-spacing: 1px;
   text-decoration: none;
 }
-.noAccount-container a:hover,
-.noAccount-container a:focus {
+.noAccount-container:is(a:hover, a:focus) {
   text-decoration: underline solid #ffc309;
 }
 /* ///////////////////////Forgot password page////////////////////////// */
@@ -250,10 +246,8 @@ body {
   font-family: "Open Sans";
   font-size: 1.1rem;
 }
-#email:focus,
-#email:hover,
-.forgotPassword-button:hover,
-.forgotPassword-button:focus {
+#email:is(focus, hover),
+.forgotPassword-button:is(hover, focus) {
   box-shadow: 1px 1px 25px grey;
 }
 /* ////////////////////////////////SignUp page/////////////////////////////// */
@@ -348,10 +342,8 @@ body {
   width: 90vw;
   max-width: 400px;
 }
-.signUp-agreement-container a,
-.signUp-agreement-container a:visited,
-.signUp-bottom-container a:visited,
-.signUp-bottom-container a {
+.signUp-agreement-container a:any-link,
+.signUp-bottom-container a:any-link {
   color: grey;
 }
 /* ///////////////////////////////////////Sign up form page///////////////////////////////////////////// */
