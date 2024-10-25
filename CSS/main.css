@@ -1,25 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 /*Notes*/
 /* brand color: #ffc309; */
-/* || CSS RESET*/
-*,
-*::after,
-*::before {
-  /* outline: 1px solid lime; */
-}
+/*CSS RESET*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* background-color: hsla(0, 100%, 50%, 0.1); */
+  /* outline: 1px solid red; */
 }
-
-/* || VARIABLES */
-:root {
-  /* COLORS */
-  --BRANDCOLOR: #ffc309;
-}
-/* || GENERAL STYLES*/
 
 body {
   font-family: "Open Sans";
@@ -65,7 +53,10 @@ body {
   max-width: 300px;
   cursor: pointer;
 }
-.sign-in-with-google-button:is(:hover, :focus) {
+.sign-in-with-google-button:hover {
+  box-shadow: 1px 1px 25px grey;
+}
+.sign-in-with-google-button:focus {
   box-shadow: 1px 1px 25px grey;
 }
 .button-align {
@@ -126,19 +117,21 @@ body {
   width: 80vw;
   max-width: 400px;
 }
-.rememberMe-forgotPass a:any-link {
+.rememberMe-forgotPass a {
   color: hsl(0, 0%, 80%);
-  /* text-decoration: none; */
+  text-decoration: none;
 }
+.rememberMe-forgotPass a:visited {
+  color: hsl(0, 0%, 80%);
+}
+
 .rememberMe-forgotPass a:focus {
   box-shadow: 1px 1px 25px grey;
-  /* text-decoration: underline; */
+  text-decoration: underline;
 }
-.rememberMe-forgotPass:is(a:hover, a:focus) {
-  text-decoration-line: underline;
-  text-decoration-style: solid;
-  text-decoration-color: var(--BRANDCOLOR);
-  text-decoration-thickness: 2px;
+.rememberMe-forgotPass a:hover,
+.rememberMe-forgotPass a:focus {
+  text-decoration: underline solid #ffc309;
 }
 .rememberMe-forgotPass a:active {
   box-shadow: none;
@@ -157,7 +150,10 @@ body {
   max-width: 200px;
   cursor: pointer;
 }
-.signIn:is(:hover, :focus) {
+.signIn:hover {
+  box-shadow: 1px 1px 25px grey;
+}
+.signIn:focus {
   box-shadow: 1px 1px 25px grey;
 }
 .button-align {
@@ -184,7 +180,8 @@ body {
   letter-spacing: 1px;
   text-decoration: none;
 }
-.noAccount-container:is(a:hover, a:focus) {
+.noAccount-container a:hover,
+.noAccount-container a:focus {
   text-decoration: underline solid #ffc309;
 }
 /* ///////////////////////Forgot password page////////////////////////// */
@@ -253,8 +250,10 @@ body {
   font-family: "Open Sans";
   font-size: 1.1rem;
 }
-#email:is(:focus, :hover),
-.forgotPassword-button:is(:hover, :focus) {
+#email:focus,
+#email:hover,
+.forgotPassword-button:hover,
+.forgotPassword-button:focus {
   box-shadow: 1px 1px 25px grey;
 }
 /* ////////////////////////////////SignUp page/////////////////////////////// */
@@ -329,7 +328,10 @@ body {
   width: 100%;
   text-align: center;
 }
-.signUp-with-button:is(:hover, :focus) {
+.signUp-with-button:hover {
+  box-shadow: 1px 1px 25px grey;
+}
+.signUp-with-button:focus {
   box-shadow: 1px 1px 25px grey;
 }
 .signUp-bottom-container {
@@ -346,8 +348,10 @@ body {
   width: 90vw;
   max-width: 400px;
 }
-.signUp-agreement-container a:any-link,
-.signUp-bottom-container a:any-link {
+.signUp-agreement-container a,
+.signUp-agreement-container a:visited,
+.signUp-bottom-container a:visited,
+.signUp-bottom-container a {
   color: grey;
 }
 /* ///////////////////////////////////////Sign up form page///////////////////////////////////////////// */
@@ -490,13 +494,19 @@ body {
   background-color: #ffc309;
 }
 /*Box-shaddow style*/
-.formStep1-button-container a .button:is(:focus, :hover),
-#phone:is(:hover, :focus),
-#formStep1-email-input:is(:hover, :focus) {
+.formStep1-button-container a .button:focus,
+.formStep1-button-container a .button:hover,
+#phone:hover,
+#phone:focus,
+#formStep1-email-input:hover,
+#formStep1-email-input:focus {
   box-shadow: 1px 1px 25px grey;
 }
-.formStep1-button-container a:any-link {
+.formStep1-button-container a {
   text-decoration: none;
+  color: black;
+}
+.formStep1-button-container a:visited {
   color: black;
 }
 /* /////////////////////////////////CompleteSignUp page///////////////////////////////////////// */
