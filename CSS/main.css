@@ -34,7 +34,10 @@ body {
   font-size: clamp(2rem, 3vw + 1rem, 3rem);
   color: white;
 }
-
+.outer-container .sign-in-heading-container img {
+  height: 80px;
+  width: 100px;
+}
 .index-main {
   display: flex;
   align-items: center;
