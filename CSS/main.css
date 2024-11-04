@@ -1,6 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
-/*Notes*/
-/* brand color: #ffc309; */
 /*CSS RESET*/
 * {
   margin: 0;
@@ -8,53 +6,59 @@
   box-sizing: border-box;
   /* outline: 1px solid red; */
 }
-
+/* || VARIABLES */
+:root {
+  /* COLORS */
+  --BRAND-COLOR: #ffc309;
+}
+/* || UTILITY CLASSES */
+/* || GENERAL STYLES */
 body {
-  font-family: "Open Sans";
+  align-items: center;
   background-color: black;
   color: white;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-flow: column;
+  font-family: "Open Sans";
+  justify-content: center;
 }
 .outer-container {
   padding: 1vw;
 }
 .sign-in-heading-container {
-  min-width: 95vw;
+  align-items: center;
   display: flex;
   flex-flow: column;
-  align-items: center;
   margin-bottom: 1rem;
+  min-width: 95vw;
 }
 .sign-in-heading-container h1 {
-  text-align: center;
-  font-weight: 100;
-  font-size: clamp(2rem, 3vw + 1rem, 3rem);
   color: white;
+  font-size: clamp(2rem, 3vw + 1rem, 3rem);
+  font-weight: 100;
+  text-align: center;
 }
 .outer-container .sign-in-heading-container img {
   height: 80px;
   width: 100px;
 }
 .index-main {
-  display: flex;
   align-items: center;
+  display: flex;
   flex-flow: column wrap;
   gap: 40px;
 }
 .sign-in-with-google-button {
-  color: black;
   background-color: white;
-  font-size: 1rem;
-  padding: 1rem;
-  border-style: solid;
   border-color: white;
   border-radius: 8px;
-  width: 60vw;
-  max-width: 300px;
+  border-style: solid;
+  color: black;
   cursor: pointer;
+  font-size: 1rem;
+  max-width: 300px;
+  padding: 1rem;
+  width: 60vw;
 }
 .sign-in-with-google-button:hover {
   box-shadow: 1px 1px 25px grey;
@@ -64,23 +68,23 @@ body {
 }
 .button-align {
   display: flex;
-  justify-content: center;
   gap: 20px;
+  justify-content: center;
 }
 .separator {
-  word-spacing: 4px;
+  color: grey;
   letter-spacing: 2px;
-  width: 80vw;
   max-width: 400px;
   text-align: center;
-  color: grey;
+  width: 80vw;
+  word-spacing: 4px;
 }
 .idPassword-container form,
 .username-container,
 .password-container {
+  align-items: flex-start;
   display: flex;
   flex-flow: column;
-  align-items: flex-start;
 }
 .idPassword-container form {
   gap: 10px;
@@ -91,14 +95,14 @@ body {
 }
 #password,
 #username-email {
-  height: 50px;
-  width: 80vw;
-  max-width: 400px;
-  border-style: solid;
   border-radius: 10px;
-  padding-left: 1rem;
-  font-size: 1.1rem;
+  border-style: solid;
   font-family: "Open Sans";
+  font-size: 1.1rem;
+  height: 50px;
+  max-width: 400px;
+  padding-left: 1rem;
+  width: 80vw;
 }
 #password:focus,
 #username-email:focus {
@@ -107,8 +111,8 @@ body {
 .rememberMe-container {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
   gap: 10px;
+  justify-content: space-between;
 }
 .rememberMe {
   color: hsl(0, 0%, 80%);
@@ -117,8 +121,8 @@ body {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  width: 80vw;
   max-width: 400px;
+  width: 80vw;
 }
 .rememberMe-forgotPass a {
   color: hsl(0, 0%, 80%);
@@ -134,24 +138,24 @@ body {
 }
 .rememberMe-forgotPass a:hover,
 .rememberMe-forgotPass a:focus {
-  text-decoration: underline solid #ffc309;
+  text-decoration: underline solid var(--BRAND-COLOR);
 }
 .rememberMe-forgotPass a:active {
   box-shadow: none;
 }
 .signIn {
+  background-color: var(--BRAND-COLOR);
+  border-color: var(--BRAND-COLOR);
+  border-radius: 8px;
+  border-style: solid;
   color: black;
+  cursor: pointer;
   font-size: 1rem;
   font-weight: 600;
   letter-spacing: 2px;
-  padding: 1rem;
-  background-color: #ffc309;
-  border-style: solid;
-  border-color: #ffc309;
-  border-radius: 8px;
-  width: 40vw;
   max-width: 200px;
-  cursor: pointer;
+  padding: 1rem;
+  width: 40vw;
 }
 .signIn:hover {
   box-shadow: 1px 1px 25px grey;
@@ -161,17 +165,17 @@ body {
 }
 .button-align {
   display: flex;
-  justify-content: center;
   gap: 20px;
+  justify-content: center;
 }
 .noAccount-container {
-  width: 80vw;
-  max-width: 400px;
+  align-items: center;
   display: flex;
   flex-flow: column;
-  justify-content: space-between;
   gap: 10px;
-  align-items: center;
+  justify-content: space-between;
+  max-width: 400px;
+  width: 80vw;
 }
 .noAccount-container p {
   color: hsl(0, 0%, 80%);
@@ -185,23 +189,23 @@ body {
 }
 .noAccount-container a:hover,
 .noAccount-container a:focus {
-  text-decoration: underline solid #ffc309;
+  text-decoration: underline solid var(--BRAND-COLOR);
 }
 /* ///////////////////////Forgot password page////////////////////////// */
 .forgotPassword-outer-container {
-  padding: 10vh 10vw;
+  align-items: flex-start;
   display: flex;
   flex-flow: column wrap;
-  align-items: flex-start;
   gap: 40px;
+  padding: 10vh 10vw;
 }
 .forgotPassword-outer-container a img {
+  align-self: center;
   box-sizing: content-box;
   display: block;
   height: 25px;
-  width: 25px;
   padding: 5px;
-  align-self: center;
+  width: 25px;
 }
 @media screen and (min-width: 425px) {
   .forgotPassword-outer-container a img {
@@ -216,42 +220,42 @@ body {
   max-width: 500px;
 }
 .forgotPassword-outer-container form {
-  width: 100%;
+  align-items: flex-start;
   display: flex;
   flex-flow: column wrap;
-  align-items: flex-start;
   gap: 30px;
+  width: 100%;
 }
 .forgotPassword-email-label {
   font-size: 1.5rem;
 }
 #email {
-  max-height: 50px;
-  height: 8vh;
-  width: 100%;
-  color: black;
   background-color: white;
-  font-size: 1rem;
-  border-style: solid;
   border-color: white;
   border-radius: 8px;
+  border-style: solid;
+  color: black;
+  font-size: 1rem;
+  height: 8vh;
+  max-height: 50px;
+  width: 100%;
 }
 .forgotPassword-button {
-  font-size: 1rem;
-  color: black;
-  background-color: #ffc309;
-  max-height: 50px;
-  height: 8vh;
-  width: 100%;
-  border-style: solid;
-  border-color: #ffc309;
+  background-color: var(--BRAND-COLOR);
+  border-color: var(--BRAND-COLOR);
   border-radius: 8px;
+  border-style: solid;
+  color: black;
   cursor: pointer;
+  font-size: 1rem;
+  height: 8vh;
+  max-height: 50px;
+  width: 100%;
 }
 #email {
-  padding-left: 1rem;
   font-family: "Open Sans";
   font-size: 1.1rem;
+  padding-left: 1rem;
 }
 #email:focus,
 #email:hover,
@@ -261,37 +265,37 @@ body {
 }
 /* ////////////////////////////////SignUp page/////////////////////////////// */
 .signUp-body-container {
-  font-family: "Open Sans";
+  align-items: center;
   display: flex;
   flex-flow: row wrap;
+  font-family: "Open Sans";
   justify-content: space-between;
-  align-items: center;
 }
 .signUp-header-container {
-  display: flex;
   align-items: center;
-  justify-content: center;
+  display: flex;
   flex-grow: 1;
+  justify-content: center;
   min-height: 100vh;
 }
 .logo-figure a {
+  align-items: center;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 .logo-figure img {
   height: 40%;
   width: 40%;
 }
 .signUp-main-container {
-  flex-grow: 1;
+  align-items: center;
   display: flex;
   flex-flow: column wrap;
-  align-items: center;
+  flex-grow: 1;
   justify-content: flex-start;
-  row-gap: 22px;
   min-height: 100vh;
   padding: 2vw 6vw;
+  row-gap: 22px;
 }
 .signUp-main-container h1 {
   width: 100%;
@@ -310,22 +314,22 @@ body {
   }
 }
 .signUp-with-button {
-  color: black;
   background-color: white;
-  font-size: 1rem;
-  padding: 1rem;
-  border-style: solid;
   border-color: white;
   border-radius: 8px;
-  width: 60vw;
-  max-width: 300px;
+  border-style: solid;
+  color: black;
   cursor: pointer;
+  font-size: 1rem;
+  max-width: 300px;
+  padding: 1rem;
+  width: 60vw;
 }
 .signUp-button-align {
+  align-items: center;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
-  align-items: center;
 }
 .button-text {
   width: 100%;
@@ -338,14 +342,14 @@ body {
   box-shadow: 1px 1px 25px grey;
 }
 .signUp-bottom-container {
+  align-items: center;
   color: grey;
-  width: 100%;
   display: flex;
   flex-flow: column nowrap;
-  align-items: center;
-  justify-content: flex-start;
   gap: 20px;
+  justify-content: flex-start;
   text-align: center;
+  width: 100%;
 }
 .signUp-agreement-container {
   width: 90vw;
@@ -359,27 +363,26 @@ body {
 }
 /* ///////////////////////////////////////Sign up form page///////////////////////////////////////////// */
 .formStep1-body-container {
-  font-family: "Open Sans";
+  /* outline: 6px dotted green; */
+  align-items: center;
   background-color: black;
   color: white;
   display: flex;
-  flex-direction: column nowrap;
-  justify-content: flex-start;
-  align-items: center;
-  /* outline: 6px dotted green; */
+  flex-flow: column nowrap;
+  font-family: "Open Sans";
   gap: 10px;
+  justify-content: flex-start;
 }
 .formStep1-header {
   width: 100%;
 }
 .formStep1-icon-container {
+  align-items: center;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  align-items: center;
-
-  outline: 2px dashed black;
   margin: 1rem;
+  outline: 2px dashed black;
 }
 .formStep1-icon-container img {
   display: block;
@@ -396,107 +399,107 @@ body {
   width: 100%;
 }
 .formStep1-steps-nav {
-  display: flex;
-  justify-content: space-evenly;
   align-items: center;
+  display: flex;
   flex-flow: row wrap;
+  justify-content: space-evenly;
 }
 .step {
-  outline: 3px solid #ffc309;
-  display: flex;
-  flex-flow: column nowrap;
   align-items: center;
-  justify-content: center;
+  align-items: center;
   border-radius: 8px;
-  height: 60px;
-  width: 60px;
+  display: flex;
   display: flex;
   flex-flow: column nowrap;
-  align-items: center;
+  flex-flow: column nowrap;
+  height: 60px;
   justify-content: center;
+  justify-content: center;
+  outline: 3px solid var(--BRAND-COLOR);
+  width: 60px;
 }
 .step-circle {
-  height: 30px;
-  width: 30px;
-  color: black;
   background-color: white;
   border-radius: 50%;
-  text-align: center;
+  color: black;
   font-size: 1rem;
+  height: 30px;
+  text-align: center;
+  width: 30px;
 }
 .step .step-name {
   font-size: 0.8rem;
 }
 .step-activated {
-  background-color: #ffc309;
+  background-color: var(--BRAND-COLOR);
+  border-color: var(--BRAND-COLOR);
+  box-shadow: 0px 4px 12px grey;
   color: black;
   font-weight: 900;
-  border-color: #ffc309;
-  box-shadow: 0px 4px 12px grey;
 }
 .formStep1-container {
-  /* padding:1rem; */
   /* outline: 3px solid purple; */
+  /* padding:1rem; */
   /* width: 95vw; */
+  align-items: flex-start;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
 }
 .formStep1-container form {
   /* outline: 3px dotted yellow; */
-  padding: 1rem 10vw;
-  width: 95vw;
+  /* row-gap: 20px; */
+  align-items: center;
   display: flex;
   flex-flow: column wrap;
-  align-items: center;
-  /* row-gap: 20px; */
+  padding: 1rem 10vw;
+  width: 95vw;
 }
 .formStep1-email {
-  padding: 1rem 1rem 1rem 0rem;
   /* outline: 2px dashed red; */
-  width: 100%;
   height: 50px;
+  padding: 1rem 1rem 1rem 0rem;
+  width: 100%;
 }
 #formStep1-email-input {
-  padding: 1rem;
   /* outline: 2px dashed red; */
-  width: 100%;
-  height: 50px;
   font-size: 1rem;
+  height: 50px;
+  padding: 1rem;
+  width: 100%;
 }
 .formStep1-phone {
-  padding: 1rem 1rem 1rem 0rem;
   /* outline: 2px dashed red; */
-  width: 100%;
   height: 50px;
+  padding: 1rem 1rem 1rem 0rem;
+  width: 100%;
 }
 #phone {
-  padding: 1rem;
   /* outline: 2px dashed red; */
-  width: 100%;
-  height: 50px;
   font-size: 1rem;
+  height: 50px;
+  padding: 1rem;
+  width: 100%;
 }
 .formStep1-button-container {
-  /* padding: 1rem; */
   /* outline: 2px dashed yellow; */
+  /* padding: 1rem; */
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  width: 100%;
   margin-top: 2rem;
+  width: 100%;
 }
 
 .formStep1-button-container a .button {
-  width: 100%;
-  padding: 1rem 4rem;
-  font-size: 1rem;
-  font-weight: 900;
+  background-color: var(--BRAND-COLOR);
   border-radius: 8px;
   cursor: pointer;
-  background-color: #ffc309;
+  font-size: 1rem;
+  font-weight: 900;
+  padding: 1rem 4rem;
+  width: 100%;
 }
-/*Box-shaddow style*/
+/*Box-shadow style*/
 .formStep1-button-container a .button:focus,
 .formStep1-button-container a .button:hover,
 #phone:hover,
@@ -515,15 +518,14 @@ body {
 /* /////////////////////////////////CompleteSignUp page///////////////////////////////////////// */
 .completeSignUp-container {
   background-color: black;
-  width: auto;
-  height: 100vh;
-
   background-image: radial-gradient(
     circle 200px at center,
     #ffc309 50%,
     black 50%
   );
-  display: flex;
-  justify-content: center;
   align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: auto;
 }
