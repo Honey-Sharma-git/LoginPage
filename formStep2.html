@@ -88,6 +88,7 @@
         />
         <label for="phone" class="formStep1-phone">Password</label>
         <input
+          onclick="resetField()"
           class="js-enterPassword-input input-field"
           type="password"
           name="Password"
@@ -102,10 +103,13 @@
           type="password"
           name="Password"
           required
-          placeholder="Re-enter your created password"
+          placeholder="Re-enter your password"
         />
+        <p class="js-output"></p>
         <div class="formStep1-button-container">
-          <a href="formStep3.html"><div class="button">Next</div></a>
+          <button class="password-check-button" onclick="checkPassword()">
+            Next
+          </button>
         </div>
       </form>
     </main>
