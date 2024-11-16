@@ -476,6 +476,23 @@ body {
   padding: 1rem;
   width: 100%;
 }
+@keyframes shake {
+  0% {
+    transform: translateX(0px);
+  }
+  25% {
+    transform: translateX(10px);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+.input-field-animation {
+  animation: shake 0.1s linear alternate;
+}
 .formStep1-button-container {
   /* outline: 2px dashed yellow; */
   /* padding: 1rem; */
@@ -503,7 +520,7 @@ body {
   font-weight: 900;
   padding: 1rem 4rem;
   font-family: "Open Sans";
-  border:none;
+  border: none;
 }
 /*Box-shadow style*/
 .formStep1-button-container a .button:focus,
