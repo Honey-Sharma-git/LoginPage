@@ -1,8 +1,14 @@
 
 function checkPassword(){
+    event.preventDefault();//To prevent form from submitting without checking password.
     let enteredPassword = document.querySelector('.js-enterPassword-input').value;
     let reEnteredPassword = document.querySelector('.js-reEnterPassword-input').value;
-    if(enteredPassword === reEnteredPassword){
+    let username = document.querySelector('.js-username').value;
+    if(username === ''){
+        document.querySelector('.js-output').innerHTML = 'Please create a username';
+    }else if(enteredPassword === ''){
+        document.querySelector('.js-output').innerHTML = 'Please create a password';
+    }else if(enteredPassword === reEnteredPassword){
         document.querySelector('.js-output').innerHTML = 'Password matched.';
         window.location.href='formStep3.html';  
     }else{
