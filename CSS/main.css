@@ -12,6 +12,10 @@
   --BRAND-COLOR: #ffc309;
 }
 /* || UTILITY CLASSES */
+.wrong-password {
+  outline: 2px solid red;
+  background-color: rgb(219, 175, 175);
+}
 /* || GENERAL STYLES */
 body {
   align-items: center;
@@ -460,25 +464,34 @@ body {
   padding: 1rem 1rem 1rem 0rem;
   width: 100%;
 }
-#formStep1-email-input {
-  /* outline: 2px dashed red; */
-  font-size: 1rem;
-  height: 50px;
-  padding: 1rem;
-  width: 100%;
-}
 .formStep1-phone {
   /* outline: 2px dashed red; */
   height: 50px;
   padding: 1rem 1rem 1rem 0rem;
   width: 100%;
 }
-#phone {
-  /* outline: 2px dashed red; */
+.input-field {
   font-size: 1rem;
   height: 50px;
   padding: 1rem;
   width: 100%;
+}
+@keyframes shake {
+  0% {
+    transform: translateX(0px);
+  }
+  25% {
+    transform: translateX(10px);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+.input-field-animation {
+  animation: shake 0.1s linear alternate;
 }
 .formStep1-button-container {
   /* outline: 2px dashed yellow; */
@@ -499,13 +512,22 @@ body {
   padding: 1rem 4rem;
   width: 100%;
 }
+.password-check-button {
+  background-color: var(--BRAND-COLOR);
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 900;
+  padding: 1rem 4rem;
+  font-family: "Open Sans";
+  border: none;
+}
 /*Box-shadow style*/
 .formStep1-button-container a .button:focus,
 .formStep1-button-container a .button:hover,
-#phone:hover,
-#phone:focus,
-#formStep1-email-input:hover,
-#formStep1-email-input:focus {
+.password-check-button:is(:hover, :focus),
+.input-field:hover,
+.input-field:focus {
   box-shadow: 1px 1px 25px grey;
 }
 .formStep1-button-container a {

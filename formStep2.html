@@ -75,29 +75,44 @@
       </nav>
     </header>
     <main class="formStep1-container">
-      <form action="https://httpbin.org/get" method="get" class="formStep1">
+      <form action="formStep3.html" method="get" class="formStep1">
         <label for="formStep1-email-input" class="formStep1-email"
           >Username:</label
         >
         <input
+          class="input-field js-username"
           type="text"
           name="Username"
-          id="formStep1-email-input"
           placeholder="Create your username"
           required
         />
         <label for="phone" class="formStep1-phone">Password</label>
         <input
+          onclick="resetField()"
+          class="js-enterPassword-input input-field"
           type="password"
           name="Password"
-          id="phone"
           required
           placeholder="Create a strong password"
         />
+        <label for="phone" class="formStep1-phone"
+          >Re-type your password:</label
+        >
+        <input
+          class="js-reEnterPassword-input input-field"
+          type="password"
+          name="Password"
+          required
+          placeholder="Re-enter your password"
+        />
+        <p class="js-output"></p>
         <div class="formStep1-button-container">
-          <a href="formStep3.html"><div class="button">Next</div></a>
+          <button class="password-check-button" onclick="checkPassword()">
+            Next
+          </button>
         </div>
       </form>
     </main>
+    <script src="js/script.js"></script>
   </body>
 </html>
